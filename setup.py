@@ -21,7 +21,7 @@ setup(
     long_description=long_description,
     url='https://github.com/wikibootup/ipynose',
     author='wikibootup',
-    author_email='.',
+    author_email='wikibootup@gmail.com',
     license='MIT',
     classifiers=[
         'Development Status :: 3 - Alpha',
