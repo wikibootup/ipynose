@@ -1,15 +1,15 @@
 import subprocess
 
 
-def show_all_test_results():
+def show_all_nose_results():
     print(result_all_test_results())
 
 
-def show_test_result(module_path):
+def show_nose_result(module_path):
     print(test_result(module_path))
 
 
-def all_test_results():
+def all_nose_results():
     out, err = subprocess.Popen(
             ['nosetests', '-v'],
             stdout=subprocess.PIPE,
@@ -18,7 +18,7 @@ def all_test_results():
     return err.decode("utf-8")
 
 
-def test_result(module_path):
+def nose_result(module_path):
     """
     module_path could be a file name
     """
