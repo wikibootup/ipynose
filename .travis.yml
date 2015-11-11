@@ -9,4 +9,4 @@ python:
 install:
   - pip install -r requirements.txt
 # command to run tests
-script: nosetests -v tests/test_ipynose.py
+script: nosetests -v ipynose/tests/test_ipynose.py
