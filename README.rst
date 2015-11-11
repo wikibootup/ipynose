@@ -6,6 +6,9 @@ ipynose
 
 print nosetests result in the iPython (notebook)
 
+`iPython notebook example here
+<http://wikibootup.github.io/etc/py/ipynose/ipynose_example.html/>`_.
+
 Usage
 =====
 
