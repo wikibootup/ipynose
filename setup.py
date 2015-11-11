@@ -1,24 +1,22 @@
 """
 Reference:
 https://packaging.python.org/en/latest/distributing.html
-https://github.com/pypa/sampleproject
+https://github.com/pypa/ipynoseproject
+https://pythonhosted.org/an_example_pypi_project/setuptools.html
 """
 
+import os
 from setuptools import setup
-from os import path
 
 
-here = path.abspath(path.dirname(__file__))
-
-# Get the long description from the README file
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
-    long_description = f.read()
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
     name='ipynose',
     version='0.0.1',
     description='print nosetests result in the iPython notebook',
-    long_description=long_description,
+    long_description=read('README.rst'),
     url='https://github.com/wikibootup/ipynose',
     author='wikibootup',
     author_email='wikibootup@gmail.com',
@@ -28,14 +26,11 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 3',
     ],
     keywords='nose',
     install_requires=['nose'],
+    packages=['ipynose'],
 )
 
