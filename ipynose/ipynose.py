@@ -2,11 +2,11 @@ import subprocess
 
 
 def show_all_nose_results():
-    print(result_all_test_results())
+    print(all_nose_results())
 
 
-def show_nose_result(module_path):
-    print(test_result(module_path))
+def show_nose_result(module_path=""):
+    print(nose_result(module_path))
 
 
 def all_nose_results():
@@ -18,7 +18,7 @@ def all_nose_results():
     return err.decode("utf-8")
 
 
-def nose_result(module_path):
+def nose_result(module_path=""):
     """
     module_path could be a file name
     """

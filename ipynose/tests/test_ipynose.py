@@ -12,6 +12,9 @@ class TestIpynose(unittest.TestCase):
         skip because it causes recursive testing
         """
         pass
+
+    def test_show_nose_result_return_None(self):
+        self.assertIsNone(ipynose.show_nose_result(self.TRUE_TEST_PATH))
     
     def test_nose_result_with_true_test(self):
         self.assertTrue("OK" in ipynose.nose_result(self.TRUE_TEST_PATH))
