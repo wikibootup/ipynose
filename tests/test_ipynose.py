@@ -1,5 +1,6 @@
 import unittest
-from .. import ipynose
+from ipynose import ipynose
+
 
 class TestIpynose(unittest.TestCase):
     def setUp(self):
