@@ -14,7 +14,7 @@ def read(fname):
 
 setup(
     name='ipynose',
-    version='0.0.1',
+    version='0.0.2',
     description='print nosetests result in the iPython notebook',
     long_description=read('README.rst'),
     url='https://github.com/wikibootup/ipynose',
